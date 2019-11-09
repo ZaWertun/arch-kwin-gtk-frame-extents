@@ -16,7 +16,6 @@ diff -r -U3 kwin-5.17.2.orig/abstract_client.cpp kwin-5.17.2/abstract_client.cpp
 +}
 +
  }
-Только в kwin-5.17.2/: abstract_client.cpp.orig
 diff -r -U3 kwin-5.17.2.orig/abstract_client.h kwin-5.17.2/abstract_client.h
 --- kwin-5.17.2.orig/abstract_client.h	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/abstract_client.h	2019-11-09 15:40:02.199445499 +0300
@@ -39,7 +38,6 @@ diff -r -U3 kwin-5.17.2.orig/abstract_client.h kwin-5.17.2/abstract_client.h
  public Q_SLOTS:
      virtual void closeWindow() = 0;
  
-Только в kwin-5.17.2/: abstract_client.h.orig
 diff -r -U3 kwin-5.17.2.orig/atoms.cpp kwin-5.17.2/atoms.cpp
 --- kwin-5.17.2.orig/atoms.cpp	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/atoms.cpp	2019-11-09 15:40:02.199445499 +0300
@@ -51,7 +49,6 @@ diff -r -U3 kwin-5.17.2.orig/atoms.cpp kwin-5.17.2/atoms.cpp
      , kwin_dbus_service(QByteArrayLiteral("_ORG_KDE_KWIN_DBUS_SERVICE"))
      , utf8_string(QByteArrayLiteral("UTF8_STRING"))
      , text(QByteArrayLiteral("TEXT"))
-Только в kwin-5.17.2/: atoms.cpp.orig
 diff -r -U3 kwin-5.17.2.orig/atoms.h kwin-5.17.2/atoms.h
 --- kwin-5.17.2.orig/atoms.h	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/atoms.h	2019-11-09 15:40:02.200445493 +0300
@@ -63,7 +60,6 @@ diff -r -U3 kwin-5.17.2.orig/atoms.h kwin-5.17.2/atoms.h
      Xcb::Atom kwin_dbus_service;
      Xcb::Atom utf8_string;
      Xcb::Atom text;
-Только в kwin-5.17.2/: atoms.h.orig
 diff -r -U3 kwin-5.17.2.orig/client.cpp kwin-5.17.2/client.cpp
 --- kwin-5.17.2.orig/client.cpp	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/client.cpp	2019-11-09 15:40:02.202445482 +0300
@@ -124,7 +120,6 @@ diff -r -U3 kwin-5.17.2.orig/client.cpp kwin-5.17.2/client.cpp
 +
  } // namespace
  
-Только в kwin-5.17.2/: client.cpp.orig
 diff -r -U3 kwin-5.17.2.orig/client.h kwin-5.17.2/client.h
 --- kwin-5.17.2.orig/client.h	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/client.h	2019-11-09 15:43:55.168145815 +0300
@@ -192,8 +187,6 @@ diff -r -U3 kwin-5.17.2.orig/client.h kwin-5.17.2/client.h
  inline bool Client::groupTransient() const
  {
      return m_transientForId == rootWindow();
-Только в kwin-5.17.2/: client.h.orig
-Только в kwin-5.17.2/: client.h.rej
 diff -r -U3 kwin-5.17.2.orig/events.cpp kwin-5.17.2/events.cpp
 --- kwin-5.17.2.orig/events.cpp	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/events.cpp	2019-11-09 15:40:02.203445476 +0300
@@ -346,7 +339,6 @@ diff -r -U3 kwin-5.17.2.orig/geometry.cpp kwin-5.17.2/geometry.cpp
      return ret;
  }
  
-Только в kwin-5.17.2/: geometry.cpp.orig
 diff -r -U3 kwin-5.17.2.orig/manage.cpp kwin-5.17.2/manage.cpp
 --- kwin-5.17.2.orig/manage.cpp	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/manage.cpp	2019-11-09 15:40:02.204445471 +0300
@@ -599,8 +591,6 @@ diff -r -U3 kwin-5.17.2.orig/placement.cpp kwin-5.17.2/placement.cpp
      geom.moveCenter(Cursor::pos());
      c->move(geom.topLeft());
      c->keepInArea(area);   // make sure it's kept inside workarea
-Только в kwin-5.17.2/: placement.cpp.orig
-Только в kwin-5.17.2/: placement.cpp.rej
 diff -r -U3 kwin-5.17.2.orig/useractions.cpp kwin-5.17.2/useractions.cpp
 --- kwin-5.17.2.orig/useractions.cpp	2019-10-29 21:18:40.000000000 +0300
 +++ kwin-5.17.2/useractions.cpp	2019-11-09 15:40:02.206445460 +0300
@@ -613,4 +603,3 @@ diff -r -U3 kwin-5.17.2.orig/useractions.cpp kwin-5.17.2/useractions.cpp
      showWindowMenu(QRect(pos, pos), active_client);
  }
  
-Только в kwin-5.17.2/: useractions.cpp.orig
